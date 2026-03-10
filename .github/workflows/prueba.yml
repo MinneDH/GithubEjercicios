@@ -1,0 +1,17 @@
+name: Prueba CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  prueba:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Mensaje
+        run: echo "Workflow ejecutado correctamente"
